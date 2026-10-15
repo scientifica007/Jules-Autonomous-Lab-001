@@ -1,10 +1,11 @@
 # RuleWorld — deterministic Game of Life experiment
 
-Cellular automaton rules are Conway's B3/S23, with **finite, non-wrapping** boundaries.
+Cellular automaton rules are Conway's B3/S23. By default, boundaries are **finite and non-wrapping**, but can be made toroidal (wrapping) using the `--wrap` option.
 
 ```bash
 python3 experiments/ruleworld/ruleworld.py --pattern blinker --width 10 --height 10 --steps 2
 python3 experiments/ruleworld/ruleworld.py --pattern glider --steps 4 --format json
+python3 experiments/ruleworld/ruleworld.py --pattern blinker --width 10 --height 10 --steps 2 --wrap
 ```
 
 Seed experiments: `blinker`, `block`, `glider`.
